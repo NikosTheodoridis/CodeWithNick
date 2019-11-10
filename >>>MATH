@@ -26,7 +26,7 @@ c = int(input("Give me the c: "))
 d = pow(b,2)-4*a*c #d =Διακρίνουσα
 if d>0:
   r1 = (-b + sqrt(d))/2*a
-  r2 = (-b - sqrt(d)))/2*a
+  r2 = (-b - sqrt(d))/2*a
   print(r1)
   print(r2)
 elif d<0:
