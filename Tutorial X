@@ -1,0 +1,25 @@
+#Python Programming
+#CodeWithNick
+# Tutorial Χ
+# Δομή Επανάληψης (Μη προκαθορυσμένο πλήθος επαναλήψεων)--Εντολή While και ατέρμων βρόγχος
+
+
+#Infinite Loop
+i =1
+s = 0
+while i!=10:
+    x = int(input())
+    s = s+x
+    i= i+2
+    print (s) 
+     
+#Ο ΑΤΕΡΜΩΝ ΒΡΟΓΧΟΣ ΝΑ ΑΠΟΦΕΥΓΕΤΑΙ ΠΑΝΤΑ (ΑΠΛΑ ΜΑΘΑΊΝΟΥΜΕ ΝΑ ΑΠΟΦΕΎΓΟΥΜΕ ΛΟΓΙΚΑ ΛΑΘΗ)
+
+#Μη προκαθορυσμένο πλήθος επαναλήψεων 
+p = 0 #2η
+name = input("Give Me Your Name: ") #1η
+while name != "END":
+  age = int(input("Give Me Your Age: "))
+  p = p+1 #2i-1
+  name = input("Give Me Your Name: ") #3η
+print(p)
