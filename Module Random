@@ -30,7 +30,8 @@ random.shuffle(items)
 print(items)
 
 sam=random.sample([1, 2, 3, 4, 5], 3) # Three samples without replacement
-print(sam)
+print(sam) 
+#Ουσιαστικά αυτό που εκτελέι είναι ... Επιλέγει από τους 5 αριθμόυς (δηλαδή αυτούς που είναι μεσα στην αγγίλη) 3 τυχαίους
 
 #Mini game with module random
 import random
