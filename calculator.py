@@ -14,7 +14,7 @@ wn = Tk()
 wn.title("Calculator")
 wn.geometry("350x452")
 #python.ico type of image
-wn.iconbitmap("C:/Users/theod/Downloads/tutorial.ico")
+wn.iconbitmap("C:/Users...")
 
 val = ""
 A=0
