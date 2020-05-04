@@ -1,8 +1,6 @@
 #Simple Calculator 
 #Tkinter Module Python 
 #CodeWithNick
-
-
 #Modules
 import tkinter
 from tkinter import *
@@ -12,9 +10,9 @@ from tkinter import messagebox
 #Screen
 wn = Tk()
 wn.title("Calculator")
-wn.geometry("350x452")
+wn.geometry("340x440")
 #python.ico type of image
-wn.iconbitmap("C:/Users...")
+wn.iconbitmap("C:/Users/theod/Downloads/logo.ico")
 
 val = ""
 A=0
@@ -136,37 +134,38 @@ def result():
 data = StringVar()
 
 #Label
-lbl = Label(wn,text = "0",anchor = NE,font = ("GOTHAMAM PRO", 40),textvariable = data,background = "grey38",fg = "white",)
+lbl = Label(wn,text = "0",anchor = NE,font = ("Roboto Bold", 40),textvariable = data,background = "white",fg = "grey28",)
 lbl.pack(expand = True, fill = "both")
 
-
+photo_equal = PhotoImage(file = r"C:/Users/theod/Downloads/Tutorials/button.png")
+photo_ce = PhotoImage(file = r"C:/Users/theod/Downloads/Tutorials/ce.png")
 #Buttons
-but1=Button(wn,padx=14,pady=14,bd=4,bg="grey5",fg = "white",text="1",font=("Courier New",16,"bold"),border=0,command =but1clicked)
-but2=Button(wn,padx=14,pady=14,bd=4,bg="grey5",fg = "white",text="2",font=("Courier New",16,"bold"),border=0,command =but2clicked)
-but3=Button(wn,padx=14,pady=14,bd=4,bg="grey5",fg = "white",text="3",font=("Courier New",16,"bold"),border=0,command =but3clicked)
-but4=Button(wn,padx=14,pady=14,bd=4,bg="grey5",fg = "white",text="4",font=("Courier New",16,"bold"),border=0,command =but4clicked)
-but5=Button(wn,padx=14,pady=14,bd=4,bg="grey5",fg = "white",text="5",font=("Courier New",16,"bold"),border=0,command =but5clicked)
-but6=Button(wn,padx=14,pady=14,bd=4,bg="grey5",fg = "white",text="6",font=("Courier New",16,"bold"),border=0,command =but6clicked)
-but7=Button(wn,padx=14,pady=14,bd=4,bg="grey5",fg = "white",text="7",font=("Courier New",16,"bold"),border=0,command =but7clicked)
-but8=Button(wn,padx=14,pady=14,bd=4,bg="grey5",fg = "white",text="8",font=("Courier New",16,"bold"),border=0,command =but8clicked)
-but9=Button(wn,padx=14,pady=14,bd=4,bg="grey5",fg = "white",text="9",font=("Courier New",16,"bold"),border=0,command =but9clicked)
-but0=Button(wn,padx=79,pady=14,bd=4,bg="grey5",fg = "white",text="0",font=("Courier New",16,"bold"),border=0,command =but0clicked)
-butpl=Button(wn,padx=14,pady=14,bd=4,bg="grey26",fg = "white",text="+",font=("Courier New",16,"bold"),border=0,command=btn_plus_clicked)
-butsub=Button(wn,padx=14,pady=14,bd=4,bg="grey26",fg = "white",text="-",font=("Courier New",16,"bold"),border=0,command=btn_minus_clicked)
-butml=Button(wn,padx=14,pady=14,bd=4,bg="grey26",fg = "white",text="*",font=("Courier New",16,"bold"),border=0,command=btn_mult_clicked)
-butdiv=Button(wn,padx=14,pady=14,bd=4,bg="grey26",fg = "white",text="/",font=("Courier New",16,"bold"),border=0,command=btn_div_clicked)
-butclear=Button(wn,padx=14,pady=119,bd=4,bg="maroon3",fg = "white",text="CE",font=("Courier New",16,"bold"),border=0,command=btn_c_pressed)
-butequal=Button(wn,padx=151,pady=14,bd=4,bg="brown1",fg = "white",text="=",font=("Courier New",16,"bold"),border=0,command=result)
+but1=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="1",font=("Courier New",16,"bold"),border=0,command =but1clicked)
+but2=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="2",font=("Courier New",16,"bold"),border=0,command =but2clicked)
+but3=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="3",font=("Courier New",16,"bold"),border=0,command =but3clicked)
+but4=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="4",font=("Courier New",16,"bold"),border=0,command =but4clicked)
+but5=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="5",font=("Courier New",16,"bold"),border=0,command =but5clicked)
+but6=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="6",font=("Courier New",16,"bold"),border=0,command =but6clicked)
+but7=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="7",font=("Courier New",16,"bold"),border=0,command =but7clicked)
+but8=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="8",font=("Courier New",16,"bold"),border=0,command =but8clicked)
+but9=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="9",font=("Courier New",16,"bold"),border=0,command =but9clicked)
+but0=Button(wn,padx=79,pady=14,bd=4,bg="white",fg = "grey28",text="0",font=("Courier New",16,"bold"),border=0,command =but0clicked)
+butpl=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="+",font=("Courier New",16,"bold"),border=0,command=btn_plus_clicked)
+butsub=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="-",font=("Courier New",16,"bold"),border=0,command=btn_minus_clicked)
+butml=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="*",font=("Courier New",16,"bold"),border=0,command=btn_mult_clicked)
+butdiv=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="/",font=("Courier New",16,"bold"),border=0,command=btn_div_clicked)
+butclear=Button(wn,padx=14,pady=119,bd=4,image =photo_ce,text="CE",font=("Courier New",16,"bold"),border=0,command=btn_c_pressed)
+butequal=Button(wn,padx=151,pady=14,bd=4,image = photo_equal,text="=",font=("Courier New",16,"bold"),border=0,command=result)
 
-but1.place(x=10,y=100)
-but2.place(x=10,y=170)
-but3.place(x=10,y=240)
-but4.place(x=75,y=100)
-but5.place(x=75,y=170)
-but6.place(x=75,y=240)
-but7.place(x=140,y=100)
-but8.place(x=140,y=170)
-but9.place(x=140,y=240)
+but1.place(x=10,y=240)  #but3.place(x=10,y=240)
+but2.place(x=75,y=240)  #but6.place(x=75,y=240)
+but3.place(x=140,y=240)  #but9.place(x=140,y=240)
+but4.place(x=10,y=170)  #but2.place(x=10,y=170)
+but5.place(x=75,y=170)  
+but6.place(x=140,y=170)  #but8.place(x=140,y=170)
+but7.place(x=10,y=100) #but1.place(x=10,y=100) 
+but8.place(x=75,y=100) #but4.place(x=75,y=100)
+but9.place(x=140,y=100) #but7.place(x=140,y=100)
 
 but0.place(x=10,y=310)
 butpl.place(x=205,y=100)
