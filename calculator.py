@@ -18,8 +18,6 @@ val = ""
 A=0
 operator = ""
 
-
-
 #Functions 
 def but1clicked():
     global val
@@ -98,7 +96,6 @@ def btn_c_pressed():
     A = 0
     operator = ""
     data.set(val)
-
 
 
 def result():
