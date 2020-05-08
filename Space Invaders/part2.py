@@ -52,7 +52,7 @@ def move_right():
 
 #Create keyboard bindings
 turtle.listen()
-turtle.onkey(move_left, "Left")
-turtle.onkey(move_right, "Right")
+turtle.onkeypress(move_left, "Left")
+turtle.onkeypress(move_right, "Right")
 
 turtle.mainloop()
