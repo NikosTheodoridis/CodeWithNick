@@ -13,12 +13,10 @@ wn.geometry("340x440")
 #python.ico type of image
 wn.iconbitmap("C:/Users/...")
 
-val = ""
 
-data =StringVar()
 
 #Label
-lbl = Label(wn,text = "0",anchor = NE,font = ("Roboto Bold", 40),textvariable = data,background = "white",fg = "grey28",)
+lbl = Label(wn,text = "0",anchor = NE,font = ("Roboto Bold", 40),background = "white",fg = "grey28",)
 lbl.pack(expand = True, fill = "both")
 
 photo_equal = PhotoImage(file = r"C:/Users/...")
@@ -58,5 +56,6 @@ butml.place(x=205,y=240)
 butdiv.place(x=205,y=310)
 butclear.place(x=270,y=100)
 butequal.place(x=10,y=380)
-#####
+
+
 wn.mainloop()
