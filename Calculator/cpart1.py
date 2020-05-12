@@ -11,7 +11,7 @@ wn = Tk()
 wn.title("Calculator")
 wn.geometry("340x440")
 #python.ico type of image
-wn.iconbitmap("C:/Users/theod/Downloads/logo.ico")
+wn.iconbitmap("C:/Users/...")
 
 val = ""
 
@@ -21,8 +21,8 @@ data =StringVar()
 lbl = Label(wn,text = "0",anchor = NE,font = ("Roboto Bold", 40),textvariable = data,background = "white",fg = "grey28",)
 lbl.pack(expand = True, fill = "both")
 
-photo_equal = PhotoImage(file = r"C:/Users/theod/Downloads/Tutorials/button.png")
-photo_ce = PhotoImage(file = r"C:/Users/theod/Downloads/Tutorials/ce.png")
+photo_equal = PhotoImage(file = r"C:/Users/...")
+photo_ce = PhotoImage(file = r"C:/Users/...")
 #Buttons
 but1=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="1",font=("Courier New",16,"bold"),border=0)
 but2=Button(wn,padx=14,pady=14,bd=4,bg="white",fg = "grey28",text="2",font=("Courier New",16,"bold"),border=0)
