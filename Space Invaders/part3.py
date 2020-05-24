@@ -1,7 +1,8 @@
 #Space Invaders - Part 3
 #Create the Enemy and move left / right / down
-import turtle
+#CodeWithNick
 
+import turtle
 
 #Set up the screen
 wn = turtle.Screen()
@@ -32,54 +33,54 @@ player.setheading(90)
 
 playerspeed = 15
 
-#Create the enemy
+#Create the Enemy 
 enemy = turtle.Turtle()
 enemy.color("red")
 enemy.shape("circle")
 enemy.penup()
 enemy.speed(0)
-enemy.setposition(-200, 250)
-
+enemy.setposition(-200,250)
 enemyspeed = 2
 
-#Move the player left and right
+
+
+#Move the player right and left 
 def move_left():
 	x = player.xcor()
-	x -= playerspeed
+	x = x - playerspeed   # x -= playerspeed (It's the same thing)
 	if x < -280:
-		x = - 280
+		x=-280
 	player.setx(x)
-	
+
 def move_right():
 	x = player.xcor()
-	x += playerspeed
+	x = x + playerspeed  # x += playerspeed (It's the same thing)
 	if x > 280:
-		x = 280
+		x= 280
 	player.setx(x)
 
 
-#Create keyboard bindings
+#Create The Bindings 
 turtle.listen()
-turtle.onkeypress(move_left, "Left")
-turtle.onkeypress(move_right, "Right")
+turtle.onkeypress(move_left,"Left")
+turtle.onkeypress(move_right,"Right")
 
-#Main game loop
 while True:
-	
-	#Move the enemy
+	#Move The Enemy 
 	x = enemy.xcor()
 	x += enemyspeed
 	enemy.setx(x)
-	
-	#Move the enemy back and down
+
 	if enemy.xcor() > 280:
 		y = enemy.ycor()
-		y -= 40
-		enemyspeed *= -1
+		y = y - 40 
+		enemyspeed = enemyspeed * -1
 		enemy.sety(y)
-
 	if enemy.xcor() < -280:
 		y = enemy.ycor()
-		y -= 40
-		enemyspeed *= -1
+		y = y - 40 
+		enemyspeed = enemyspeed * -1
 		enemy.sety(y)
+
+
+
