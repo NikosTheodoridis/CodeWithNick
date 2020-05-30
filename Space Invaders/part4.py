@@ -55,9 +55,7 @@ bullet.hideturtle()
 
 bulletspeed = 20
 
-#Define bullet state
-#ready - ready to fire
-#fire - bullet is firing
+#Bullet State
 bulletstate = "ready"
 
 
@@ -77,7 +75,6 @@ def move_right():
 	player.setx(x)
 	
 def fire_bullet():
-	#Declare bulletstate as a global if it needs changed
 	global bulletstate
 	if bulletstate == "ready":
 		bulletstate = "fire"
@@ -121,7 +118,7 @@ while True:
 		y += bulletspeed
 		bullet.sety(y)
 	
-	#Check to see if the bullet has gone to the top
+	#Bullet go to home 
 	if bullet.ycor() > 275:
 		bullet.hideturtle()
 		bulletstate = "ready"
