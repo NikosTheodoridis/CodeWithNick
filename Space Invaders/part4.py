@@ -46,7 +46,7 @@ enemyspeed = 2
 #Create the player's bullet
 bullet = turtle.Turtle()
 bullet.color("yellow")
-bullet.shape("triangle")
+bullet.shape("circle")
 bullet.penup()
 bullet.speed(0)
 bullet.setheading(90)
