@@ -1,8 +1,8 @@
-#Animation
-#Movement
+#Import An Image In Your Game
 #CodeWithNick
+#Python -- TurtleGraphics 
+
 import turtle
-import time
 
 
 #Register The Shape
@@ -14,7 +14,6 @@ wn = turtle.Screen()
 wn.title("Animation")
 wn.bgcolor("pink")
 wn.update()
-
 
 
 #Make The Player
